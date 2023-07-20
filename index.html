@@ -6,43 +6,48 @@
 </head>
 
 <body>
-<div class="container grid grid-cols-3 gap-4 pt-5">
+<div class="container grid grid-cols-3 gap-4 min-1440:pt-5 pt-3">
     <div class="flex flex-col items-center">
-        <button class="px-9 pt-1 border-2 border-grey rounded-full shadow-sm font-hanuman text-4xl text-grey ease-in-out duration-500 hover:text-dark-bg hover:bg-grey">home</button>
+        <button class="px-9 pt-1 border-2 border-grey rounded-full shadow-sm font-hanuman min-1440:text-4xl text-xl text-grey ease-in-out duration-500 hover:text-dark-bg hover:bg-grey">home</button>
     </div>
     <div class="flex flex-col items-center">
-        <button class="px-6 pt-1 border-2 border-grey rounded-full shadow-sm font-hanuman text-4xl text-grey ease-in-out duration-500 hover:text-dark-bg hover:bg-grey">cv</button>
+        <button class="px-6 pt-1 border-2 border-grey rounded-full shadow-sm font-hanuman min-1440:text-4xl text-xl text-grey ease-in-out duration-500 hover:text-dark-bg hover:bg-grey">cv</button>
     </div>
     <div class="flex flex-col items-center">
-        <button class="px-10 pt-1 border-2 border-grey rounded-full shadow-sm font-hanuman text-4xl text-grey ease-in-out duration-500 hover:text-dark-bg hover:bg-grey">projects</button>
+        <button class="px-10 pt-1 border-2 border-grey rounded-full shadow-sm font-hanuman min-1440:text-4xl text-xl text-grey ease-in-out duration-500 hover:text-dark-bg hover:bg-grey">projects</button>
     </div>
 </div>
 
-<div class="pt-5">
+<div class="min-1440:pt-5 pt-3">
     <hr class="border-1 border-grey">
 </div>
 
-<div class="px-4 pt-2 grid grid-cols-5 grid-rows-6 gap-4 max-h-[90vh]">
+<div class="px-4 pt-2 grid grid-cols-5 grid-rows-6 gap-4 max-h-[75vh] min-1440:max-h-[90vh]">
     <div class="col-span-2 row-span-4 flex justify-center items-center">
         <img class="flex place-item-center max-w-full max-h-full" src='media/circle.png'>
     </div>
 
     <div class="min-[2300px]:px-52 min-[2100px]:px-40 min-[1900px]:px-32 min-[1700px]:px-24 col-span-2 row-span-2 row-start-5 container grid flex justify-center">
-        <h1 class="self-end justify-center items-center flex text-grey font-hanuman text-4xl mb-2">
+        <h1 class="self-end justify-center items-center flex text-grey font-hanuman min-1440:text-4xl text-2xl mb-2">
             hai! i'm Ahmed
         </h1>
-        <ul class="self-start flex flex-col items-center justify-center text-grey list-inside font-hanuman text-2xl list-disc mt-0">
-            <li>i spend way too much time on my computer and do things online as well</li>
-            <li>aspiring computing student @ imperial college london (that’s the plan, at least)</li>
+        <ul class="self-start flex flex-col items-center justify-center text-grey list-inside text-center font-hanuman min-1440:text-2xl text-md list-disc mt-0">
+            <li>i spend way too much time on my<br>computer and do things online as well</li>
+            <li>aspiring computing student @ imperial college<br>london (that’s the plan, at least)</li>
             <li>current obsession: nier replicant</li>
             <li>current project: making this website</li>
         </ul>
+        <div class="grid grid-cols-4 flex justify-center pt-3">
+                <div class="flex justify-center"><img src="media/github.svg"></div>
+                <div class="flex justify-center"><img src="media/discord.svg"></div>
+                <div class="flex justify-center"><img src="media/spotify.svg"></div>
+                <div class="flex justify-center"><img src="media/twitter.svg"></div>
+        </div>
     </div>
     
 </div>
- 
+
 
 
 </body>
 </html>
- 
