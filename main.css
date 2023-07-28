@@ -3,9 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    background-color: #231f1f
-}
 
 .header-text {
     color:#d9d9d9;
