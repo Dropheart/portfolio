@@ -3,9 +3,10 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 
-<body>
+<body class="bg-[#231f1f]">
 <div class="container grid grid-cols-3 gap-4 min-1440:pt-5 pt-3">
     <div class="flex flex-col items-center">
         <button class="px-9 pt-1 border-2 border-grey rounded-full shadow-sm font-hanuman min-1440:text-4xl text-xl text-grey ease-in-out duration-500 hover:text-dark-bg hover:bg-grey">home</button>
@@ -39,25 +40,57 @@
         </ul>
         <div class="grid grid-cols-4 flex justify-center pt-3">
                 <div class="flex justify-center"><a href="https://www.github.com/Dropheart" target="_blank" rel="noreferrer noopener"><img src="media/github.svg"></a></div>
-                <div class="flex justify-center"><button onclick="navigator.clipboard.writeText(`Dropheart`)"><img src="media/discord.svg"></div></button>
+                <div id="discord" class="tooltip tooltip-secondary flex justify-center" data-tip="Dropheart"><button onclick="discord()"><img src="media/discord.svg"></button></div>
                 <div class="flex justify-center"><a href="https://open.spotify.com/user/w9kme1u64h0ld4jtggltycs40?si=e1a7eebb8d4b432f" target="_blank" rel="noreferrer noopener"><img src="media/spotify.svg"></a></div>
-                <div class="flex justify-center"><a href="https://www.twitter.com/DropheartYT" target="_blank" rel="noreferrer noopener"><img src="media/twitter.svg"></div></a>
+                <div class="flex justify-center"><a href="https://www.twitter.com/DropheartYT" target="_blank" rel="noreferrer noopener"><img src="media/twitter.svg"></a></div>
         </div>
     </div>
     
     <div class="col-span-3 row-span-6 col-start-3 flex flex-col items-center justify-center pt-5">
-        <img class="max-w-full max-h-full" src="media/cat1.jpg">
-        <p class="flex items-center justify-center text-grey font-hanuman pt-2">
-            This is a caption for silver selfie.
-        </p>
-        <div class="absolute place-self-end pr-32">
-            <button class="px-1 border-2 border-grey rounded-full shadow-sm font-hanuman text-xl text-grey ease-in-out duration-500 hover:text-dark-bg hover:bg-grey">⏵</button>
+        <div class="carousel w-full h-full pt-5">
+            <div id="item1" class="carousel-item w-full h-full flex justify-center">
+                <img src="media/cat1.jpg">
+                <p class="self-center pl-10 text-grey font-hanuman">
+                    This is my cat taking a selfie.
+                </p>
+            </div>
+            <div id="item2" class="carousel-item w-full h-full justify-center">
+                <img src="media/cat2.jpeg">
+                <p class="self-center pl-10 text-grey font-hanuman">
+                    This is my cat with his paw on my cheek.
+                </p>
+            </div>
+            <div id="item3" class="carousel-item w-full h-full justify-center">
+                <img src="media/cat3.jpg">
+                <p class="self-center pl-10 text-grey font-hanuman">
+                    This is my cat being lazy and wanting to be pet.
+                </p>
+            </div>
+            <div id="item4" class="carousel-item w-full h-full justify-center">
+                <img src="media/cat4.jpg">
+                <p class="self-center pl-10 text-grey font-hanuman">
+                    This is my cat being dead inside.
+                </p>
+            </div>
+            <div id="item5" class="carousel-item w-full h-full justify-center">
+                <img src="media/cat5.png">
+                <p class="self-center pl-10 text-grey font-hanuman">
+                    This is my friend's cat.
+                </p>
+            </div>
         </div>
-        <div class="absolute place-self-start pl-32">
-            <button class="px-1 border-2 border-grey rounded-full shadow-sm font-hanuman text-xl text-grey ease-in-out duration-500 hover:text-dark-bg hover:bg-grey">⏴</button>
+        <div class="flex justify-center pt-3 gap-x-0.5">
+            <a class="btn btn-circle btn-xs gap-2" href="#item1">1</a>
+            <a class="btn btn-circle btn-xs gap-2" href="#item2">2</a>
+            <a class="btn btn-circle btn-xs gap-2" href="#item3">3</a>
+            <a class="btn btn-circle btn-xs gap-2" href="#item4">4</a>
+            <a class="btn btn-circle btn-xs gap-2" href="#item5">5</a>
         </div>
+        <!-- <p class="text-grey font-hanuman text-sm pt-2">
+            Psst, you can also scroll!
+        </p> !-->
     </div>
-</div>
 
+</div>
 </body>
 </html>
