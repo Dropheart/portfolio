@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanuman&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.header-text {
+    color:#d9d9d9;
+    font-family: 'Hanuman', serif;
+    font-size: 3em;
+    text-align: center;
+}

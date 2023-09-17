@@ -2,17 +2,17 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="resume.css">
     <script src="main.js"></script>
 </head>
 
 <body class="bg-[#231f1f]">
 <div class="container grid grid-cols-3 gap-4 min-1440:pt-5 pt-3">
     <div class="flex flex-col items-center">
-        <button class="px-9 pt-1 border-2 border-grey rounded-full shadow-sm font-hanuman min-1440:text-4xl text-xl text-grey ease-in-out duration-500 hover:text-dark-bg hover:bg-grey">home</button>
+        <a href="index.html"><button class="px-9 pt-1 border-2 border-grey rounded-full shadow-sm font-hanuman min-1440:text-4xl text-xl text-grey ease-in-out duration-500 hover:text-dark-bg hover:bg-grey">home</button></a>
     </div>
     <div class="flex flex-col items-center">
-        <a href="pages/resume.html"><button class="px-6 pt-1 border-2 border-grey rounded-full shadow-sm font-hanuman min-1440:text-4xl text-xl text-grey ease-in-out duration-500 hover:text-dark-bg hover:bg-grey">cv</button></a>
+        <a href="resume.html"><button class="px-6 pt-1 border-2 border-grey rounded-full shadow-sm font-hanuman min-1440:text-4xl text-xl text-grey ease-in-out duration-500 hover:text-dark-bg hover:bg-grey">cv</button></a>
     </div>
     <div class="flex flex-col items-center">
         <button class="px-10 pt-1 border-2 border-grey rounded-full shadow-sm font-hanuman min-1440:text-4xl text-xl text-grey ease-in-out duration-500 hover:text-dark-bg hover:bg-grey">projects</button>
@@ -23,74 +23,52 @@
     <hr class="border-1 border-grey">
 </div>
 
-<div class="px-4 pt-2 grid grid-cols-5 grid-rows-6 gap-4 max-h-[75vh] min-1440:max-h-[90vh]">
-    <div class="col-span-2 row-span-4 flex justify-center items-center">
-        <img class="flex place-item-center max-w-full max-h-full" src='media/circle.png'>
-    </div>
-
-    <div class="min-[2300px]:px-52 min-[2100px]:px-40 min-[1900px]:px-32 min-[1700px]:px-24 col-span-2 row-span-2 row-start-5 container grid flex justify-center">
-        <h1 class="self-end justify-center items-center flex text-grey font-hanuman min-1440:text-4xl text-2xl mb-2">
-            hai! i'm Ahmed
-        </h1>
-        <ul class="self-start flex flex-col items-center justify-center text-grey list-inside text-center font-hanuman min-1440:text-2xl text-md list-disc mt-0">
-            <li>i spend way too much time on my<br>computer and do things online as well</li>
-            <li>aspiring computing student @ imperial college<br>london (that’s the plan, at least)</li>
-            <li>current obsession: nier replicant</li>
-            <li>current project: making this website</li>
+<div class="pt-5 font-hanuman px-4 pt-2 grid auto-rows-auto gap-4 max-h-[75vh] min-1440:max-h-[90vh]">
+    <div>
+        <h1 class="text-3xl underline underline-offset-8">Computing @ Imperial College London</h1>
+        <ul class="pt-1 text-lg list-inside list-disc">
+            <li>First year student, graduating 2026.</li>
+            <li>// todo: things at imperial</li>
         </ul>
-        <div class="grid grid-cols-4 flex justify-center pt-3">
-                <div class="flex justify-center"><a href="https://www.github.com/Dropheart" target="_blank" rel="noreferrer noopener"><img src="media/github.svg"></a></div>
-                <div id="discord" class="tooltip tooltip-secondary flex justify-center" data-tip="Dropheart"><button onclick="discord()"><img src="media/discord.svg"></button></div>
-                <div class="flex justify-center"><a href="https://open.spotify.com/user/w9kme1u64h0ld4jtggltycs40?si=e1a7eebb8d4b432f" target="_blank" rel="noreferrer noopener"><img src="media/spotify.svg"></a></div>
-                <div class="flex justify-center"><a href="https://www.twitter.com/DropheartYT" target="_blank" rel="noreferrer noopener"><img src="media/twitter.svg"></a></div>
-        </div>
     </div>
-    
-    <div class="col-span-3 row-span-6 col-start-3 flex flex-col items-center justify-center pt-5">
-        <div class="carousel w-full h-full pt-5">
-            <div id="item1" class="carousel-item w-full h-full flex justify-center">
-                <img src="media/cat1.jpg">
-                <p class="self-center pl-10 text-grey font-hanuman">
-                    This is my cat taking a selfie.
-                </p>
-            </div>
-            <div id="item2" class="carousel-item w-full h-full justify-center">
-                <img src="media/cat2.jpeg">
-                <p class="self-center pl-10 text-grey font-hanuman">
-                    This is my cat with his paw on my cheek.
-                </p>
-            </div>
-            <div id="item3" class="carousel-item w-full h-full justify-center">
-                <img src="media/cat3.jpg">
-                <p class="self-center pl-10 text-grey font-hanuman">
-                    This is my cat being lazy and wanting to be pet.
-                </p>
-            </div>
-            <div id="item4" class="carousel-item w-full h-full justify-center">
-                <img src="media/cat4.jpg">
-                <p class="self-center pl-10 text-grey font-hanuman">
-                    This is my cat being dead inside.
-                </p>
-            </div>
-            <div id="item5" class="carousel-item w-full h-full justify-center">
-                <img src="media/cat5.png">
-                <p class="self-center pl-10 text-grey font-hanuman">
-                    This is my friend's cat.
-                </p>
-            </div>
-        </div>
-        <div class="flex justify-center pt-3 gap-x-0.5">
-            <a class="btn btn-circle btn-xs gap-2" href="#item1">1</a>
-            <a class="btn btn-circle btn-xs gap-2" href="#item2">2</a>
-            <a class="btn btn-circle btn-xs gap-2" href="#item3">3</a>
-            <a class="btn btn-circle btn-xs gap-2" href="#item4">4</a>
-            <a class="btn btn-circle btn-xs gap-2" href="#item5">5</a>
-        </div>
-        <!-- <p class="text-grey font-hanuman text-sm pt-2">
-            Psst, you can also scroll!
-        </p> !-->
+    <div>
+        <h1 class="text-3xl underline underline-offset-8">Valedictorian @ British School of Dhahran</h1>
+        <ul class="pt-1 text-lg list-inside list-disc">
+            <li><b>A Levels:</b> A*A*A*A* Maths, Further Maths, Computing, Physics</li>
+            <li><b>GCSEs:</b> 5 9s, 4A*, 1 8.</li>
+            <li><b>ISG Learner Profile of Graduates award</b>; gave graduating speech.</li>
+            <li><b>Highest Academic Achievement</b> in 10th, 11th, 12th Grade.</li>
+            <li><b>Compassion leader</b><br>Represented BSD in the international Compassion Summit, in person and online. Organized procurement and creation of gift bags for school custodians, ribbons for cancer awareness, and activites for younger kids.</li>
+            <li><b>Mu Alpha Theta</b><br>Participated in interschool Maths competitions; created a Maths competition team for BSD; worked on Mu Alpha Theta BSD website. Ran stall at color run to raise money and increase club awareness. Won interschool maths competition, both team and individual.</li>
+            <li><b>Learning to Program</b><br>Taught students basic programming skills, lead with a friend</li>
+            <li>Outstanding Cambridge Learner’s Award: Top in Eastern Province for Computer Science, chosen to give a speech at Cambridge awards ceremony.</li>
+            <li><b>Maths Competitions</b><br>
+                <ul class="pt-1 list-inside list-disc indent-10">
+                    <li>University of Waterloo Pascal Maths Competition: Honors Roll Group IV</li>
+                    <li>University of Waterloo Euclid Maths Competition: Highest in School</li>
+                    <li>AMC 12B Highest in Country</li>
+                </ul>
+            </li>
+        </ul>
     </div>
-
+    <div>
+        <h1 class="text-3xl underline underline-offset-8">Research Science Institute 2022 @ MIT</h1>
+        <ul class="pt-1 text-lg list-inside list-disc">
+            <li>Intense, 6 week program at Massachusetts Institute of Technology.</li>
+            <li>Conducted research on photogrammetry, extracting 3D information from 2D pictures. Presented research presentation and paper in the last week.</li>
+            <li>Investigated effectiveness of current tools, as well as implemented primitive photogrammetry pipeline in MATLAB.</li>
+            <li>Attended nightly lectures about various STEM topics such as gene editing, the P=NP problem, the growing challenges with cybersecurity and more.</li>
+        </ul>
+    </div>
+    <div>
+        <h1 class="text-3xl underline underline-offset-8">Other</h1>
+        <ul class="pt-1 text-lg list-inside list-disc">
+            <li><b>Discord Administration and Developemnt</b><br>Selecting and training users to join a moderation team for a community of over a hundred thousand members. Soliciting and acting on user feedback. Coding bots to automate tasks & moderation and improve user satisfaction on the online community.</li>
+            <li>Proficient in Python, HTML, JavaScript. Learning Java.</li>
+            <li>Faster learner, team worker.</li>
+            <li>Top 5 Competitive Tetris Players in Saudi Arabia, Tetr.io</li>
+        </ul>
+    </div>
 </div>
 </body>
 </html>
