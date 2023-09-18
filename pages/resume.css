@@ -1335,22 +1335,6 @@ html{
   width: 100%;
 }
 
-.w-1{
-  width: 0.25rem;
-}
-
-.w-5{
-  width: 1.25rem;
-}
-
-.w-1\/5{
-  width: 20%;
-}
-
-.w-2\/5{
-  width: 40%;
-}
-
 .max-w-full{
   max-width: 100%;
 }
@@ -1387,10 +1371,6 @@ html{
   flex-direction: column;
 }
 
-.place-content-center{
-  place-content: center;
-}
-
 .items-center{
   align-items: center;
 }
@@ -1417,10 +1397,6 @@ html{
        column-gap: 0.125rem;
 }
 
-.place-self-center{
-  place-self: center;
-}
-
 .self-start{
   align-self: flex-start;
 }
@@ -1433,20 +1409,12 @@ html{
   align-self: center;
 }
 
-.justify-self-center{
-  justify-self: center;
-}
-
 .rounded-full{
   border-radius: 9999px;
 }
 
 .border-2{
   border-width: 2px;
-}
-
-.border{
-  border-width: 1px;
 }
 
 .border-grey{
@@ -1479,11 +1447,6 @@ html{
   padding-right: 2.25rem;
 }
 
-.py-5{
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .pl-10{
   padding-left: 2.5rem;
 }
@@ -1504,24 +1467,8 @@ html{
   padding-top: 1.25rem;
 }
 
-.pb-5{
-  padding-bottom: 1.25rem;
-}
-
-.pb-8{
-  padding-bottom: 2rem;
-}
-
 .text-center{
   text-align: center;
-}
-
-.indent-px{
-  text-indent: 1px;
-}
-
-.indent-1{
-  text-indent: 0.25rem;
 }
 
 .indent-10{
@@ -1537,16 +1484,6 @@ html{
   line-height: 2rem;
 }
 
-.text-sm{
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-}
-
-.text-xl{
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
-
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1557,6 +1494,16 @@ html{
   line-height: 1.75rem;
 }
 
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .text-grey{
   --tw-text-opacity: 1;
   color: rgb(217 217 217 / var(--tw-text-opacity));
@@ -1564,14 +1511,6 @@ html{
 
 .underline{
   text-decoration-line: underline;
-}
-
-.underline-offset-1{
-  text-underline-offset: 1px;
-}
-
-.underline-offset-4{
-  text-underline-offset: 4px;
 }
 
 .underline-offset-8{
