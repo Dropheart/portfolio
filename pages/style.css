@@ -1410,6 +1410,26 @@ html{
   max-height: 50%;
 }
 
+.max-h-\[\]{
+  max-height: ;
+}
+
+.max-h-\[1080px\]{
+  max-height: 1080px;
+}
+
+.max-h-\[45svh\]{
+  max-height: 45svh;
+}
+
+.max-h-\[75svw\]{
+  max-height: 75svw;
+}
+
+.max-h-\[80svw\]{
+  max-height: 80svw;
+}
+
 .w-full{
   width: 100%;
 }
@@ -1687,6 +1707,60 @@ html{
 .hover\:text-dark-bg:hover{
   --tw-text-opacity: 1;
   color: rgb(35 31 31 / var(--tw-text-opacity));
+}
+
+@media (min-width: 550px){
+  .min-\[550px\]\:max-h-\[75svw\]{
+    max-height: 75svw;
+  }
+}
+
+@media (min-width: 700px){
+  .min-\[700px\]\:max-h-\[75svw\]{
+    max-height: 75svw;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:col-span-3{
+    grid-column: span 3 / span 3;
+  }
+
+  .lg\:row-span-6{
+    grid-row: span 6 / span 6;
+  }
+
+  .lg\:grid{
+    display: grid;
+  }
+
+  .lg\:max-h-\[75vh\]{
+    max-height: 75vh;
+  }
+
+  .lg\:max-h-\[100svw\]{
+    max-height: 100svw;
+  }
+
+  .lg\:max-h-\[50svw\]{
+    max-height: 50svw;
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:grid-cols-5{
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .lg\:grid-rows-6{
+    grid-template-rows: repeat(6, minmax(0, 1fr));
+  }
+
+  .lg\:gap-4{
+    gap: 1rem;
+  }
 }
 
 @media (min-width: 1700px){
