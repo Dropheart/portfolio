@@ -1665,6 +1665,10 @@ html{
   line-height: 1.75rem;
 }
 
+.font-bold{
+  font-weight: 700;
+}
+
 .text-grey{
   --tw-text-opacity: 1;
   color: rgb(217 217 217 / var(--tw-text-opacity));
